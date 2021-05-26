@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ASSETS/toyota.css">
+    <title>TOYOTA FORM</title>
+</head>
+<body>
+
+    <section class="formcontainer" >
+        <!-- customer information section -->
+        <section class="info1">
+            <div class="customerinfo">
+                <fieldset id="customerinfo">
+                    <legend>Customer Information</legend>
+                    <div>
+                        <label for="" >CustomerID:</label>
+                        <input type="number" class="idbox" id="customerid" placeholder="XXX-XX-XXXX">
+                        
+                    </div>
+                    <div>
+                        <label for="">Name:</label>
+                        <input type="text" class="namebox" id="customername" >
+                    </div>
+                    <div>
+                        <label for="">state:</label>
+                        <input type="text" class="statebox" id="state" >
+                        <input type="checkbox" id="retail" checked >
+                        <label for="">Retail Customer</label>
+                    </div>
+                  
+                </fieldset>
+
+            </div>
+            <!-- shipment information section and shipment types -->
+            <section class="shippinginfo" >
+                <fieldset id="shippingbox">
+                    <legend>Shipping</legend>
+                    <div class="shippingtype1">
+                        <div id="shippingitem1">
+                            <input type="radio" name="value" value="value" id="ups" checked>
+                          <label for="">UPS</label>
+                        </div>
+
+                      <div>
+                          <input type="radio" name="value" value="value" id="feg">
+                         <label for="">Fed Ex Ground</label>
+                      </div>
+                    </div>
+
+                    <div class="shippingtype2">
+                        <div id="shippingitem2">
+                            <input type="radio" name="value" value="value" id="upa">
+                            <label for="">Us Postal Air</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="value" value="value" id="fea">
+                            <label for=""> Fed Ex Air</label>
+                        </div>
+                    </div>  
+                </fieldset>
+            </section>
+        </section>
+        <!-- order section -->
+        <section class="info2">
+            <div class="orderinfo">
+                <fieldset id="orderbox">
+                    <legend>Part Ordered</legend>
+                    <div>
+                        <label for="">Part Number:</label>
+                        <input type="number" class="numberbox" id="partnumber">
+                    </div>
+                    <div>
+                        <label for="">Description:</label>
+                        <input type="text" class="descriptionbox" id="description">
+
+                    </div>
+                    <div>
+                        <label for="">Price Per Part:</label>
+                        <input type="number" class="pricebox" id="price">
+                
+                           
+                        <label for="">Quantity:</label>
+                        <input type="number" class="qtybox" id="quantity">
+                    </div>
+                      <input type="checkbox" class="checkbox2" id="oversizecontainer"> 
+                      <label for="">Oversize Container?</label>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- Output section -->
+           <section class="output">
+               <fieldset id="outputlabels">
+                   <legend>Output</legend>
+                   <div>
+                     <label for="">Cost:</label>
+                     <output  id="cost"></output>
+                   </div>
+                   <div>
+                     <label for="">Sales Tax:</label>
+                     <output  id="tax"></output>
+                   </div>
+                   <div>
+                     <label for="">Shipping&Handling:</label>
+                     <output   id="shipping"></output>
+                   </div>
+                   <div>
+                      <label for="">Total:</label>
+                       <output  id="total"></output>
+                   </div>
+                </fieldset>
+            </section>
+
+        </section>
+        <!-- Buttton section -->
+        <section class="end">
+            <div>
+                <button type="button" id="button1" onclick="validData()">Compute</button>
+            </div>
+            <div>
+                <button  type="button" id="button2" onclick="location.reload()">New Order</button>
+            </div>
+            <div class="button3">
+                <button type="button" id="button3" onclick="exit()">Exit</button>
+            </div>
+        </section>
+        <!--Exit popup button-->
+        <section  class="alertmsg" id="popup">
+            <div class="exitsection">
+                
+                <div class="description" >
+                      
+                    Do you want to confirm Exit ?
+
+                </div>  <br> 
+                <div>
+                    <button type="button"  id="yesbtn"  onclick="self.close()">YES</button>
+                    <button type="button"  id="nobtn"  onclick="popout()">NO</button>
+                </div>    
+
+            </div>
+        
+        </section>
+        <!-- validation popup messages -->
+        <section id="style">
+            <div  class="errormsg" id="popmsg">
+                <div id="popup1" ></div>
+                <div> <br>
+                <button type="button"  id="errorbtn"  onclick="Close()">ok</button>
+            </div>
+            </div>
+        </section>
+        
+    </section>
+    <script src="ASSETS/toyota.js"></script>
+</body>
+</html>

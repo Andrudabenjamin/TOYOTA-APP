@@ -1,0 +1,340 @@
+/* body section */
+body{
+    background-color: burlywood;
+    
+}
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 224, 193);
+    width: 1000px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    
+    
+
+}
+/*fieldset color*/
+fieldset{
+    border-color: whitesmoke;
+}
+/*styling info1 section*/
+.info1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+        
+}
+.customerinfo{
+    background-color: rgb(255, 191, 130);
+    width: 600px;
+    
+    
+}
+#customerinfo{
+    height: 160px;
+    width: 500px;
+
+}
+
+.idbox{
+    margin: 5px;
+    width: 110px;
+    
+}
+.namebox{
+    margin-left: 45px;
+    width: 400px;
+
+}
+.statebox{
+    margin: 5px;
+    margin-left: 55px;
+    width: 30px;
+    text-transform: uppercase;
+
+}
+/*styling shipping info section*/
+#shippingbox{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    
+}
+.shippinginfo{
+    display: flex;
+    background-color: rgb(255, 191, 130);
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 170px;
+    width: 440px;
+    margin-right: 10px;
+    
+}
+.shippingtype1{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    
+}
+.shippingtype2{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+
+    
+    
+}
+#shippingitem1{
+    margin-right: 100px;
+}
+#shippingitem2{
+    margin-right: 50px;
+}
+
+
+/*styling info2 section*/
+.info2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    
+
+    
+}
+input{
+    border-radius: 2px;
+    border-style: inherit;
+    
+}
+.infobox{
+    height: 150px;
+}
+.orderinfo{
+   margin-top: 10px;
+   background-color: rgb(255, 191, 130);
+   margin-right: 5px;
+   width: 550px;
+   height: 220px;
+ 
+
+}
+#orderbox{
+    height: 200px;
+}
+.numberbox{
+    margin-left: 0px;
+
+}
+.descriptionbox{
+    margin: 5px;
+    margin-left: 8px;
+}
+.pricebox{
+    margin: 5px;
+    margin-left: -4px;
+    width: 60px;
+    text-align: right;
+}
+.qtybox{
+    
+    margin: 5px;
+    margin-left: 0px;
+    width: 30px;
+    text-align: right;
+}
+/*styling output section*/
+.output{
+    background-color: rgb(255, 191, 130);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/*labels*/
+output{
+
+    display: block;
+    text-align: right;    
+    background-color: whitesmoke;
+    border-style: inherit;
+    
+    
+    
+
+    
+
+    
+
+}
+#outputlabels{
+    
+    text-align: left;
+    height: 200px;
+    width: 400px;
+    
+   
+}
+
+#cost{
+    width: 400px;
+    height: 25px;
+    
+
+} 
+#tax{
+    width: 400px;
+    height: 25px;
+ 
+}
+#shipping{
+    height: 25px;
+
+}
+#total{
+    width: 400px;
+    height: 25px;
+
+} 
+
+
+/*styling end section*/
+.end{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+button{
+    border-color: whitesmoke;
+}
+#button1{
+    background-color: rgb(255, 191, 130);
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(243, 206, 111) ;
+    
+    
+}
+#button2{
+    background-color: rgb(255, 191, 130);
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: rgb(243, 204, 106);
+    outline: none;
+}
+#button3{
+    position: relative;
+    right: 50px;
+    background-color: rgb(255, 191, 130);
+    margin-left: 650px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-color:rgb(247, 207, 106);
+}
+/* Exit Popup message */
+.alertmsg{
+    background: #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgba(250, 168, 92, 0.549);
+}
+.exitsection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    background-color: rgba(182, 126, 74, 0.919);
+    border-radius: 20px;
+    width: 240px;
+    height: 190px;
+    box-sizing: border-box;
+    
+    
+   
+}
+
+.description{
+    margin-top: 20%;
+    font-size: 17px;
+}
+.errormsg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: rgba(179, 120, 58, 0.864);
+   
+   
+}
+/* styling popup error message */
+#popmsg{
+    margin: 20% 50% 20% 50%;
+    transform: translate(-50%,-50%) ;
+    background-color: rgba(179, 120, 58, 0.864);
+    border-radius: 10px;
+    width: 300px;
+    height: 90px;
+    box-sizing: border-box;
+}
+#style{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgba(250, 168, 92, 0.57);
+    display: none;
+}
+#popup1{
+    color: black;
+    font-size: large;
+    margin-top: 2%;
+}
+
+#errorbtn{
+    font-size: larger;
+    padding: 10px 20px;
+    background:rgba(230, 139, 109, 0.878);
+    border: 1px solid rgba(242, 204, 134, 0.83);
+    color: black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#yesbtn{
+    padding: 10px 20px;
+    background:rgba(238, 136, 89, 0.878);
+    border: 1px solid rgba(242, 204, 134, 0.83);
+    color: black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#nobtn{
+    padding: 10px 20px;
+    background:rgba(238, 140, 95, 0.878);
+    border: 1px solid rgba(242, 204, 134, 0.83) ;
+    color: black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
